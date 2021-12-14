@@ -1,0 +1,41 @@
+.header_menu{
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 72px;
+}
+.menu_btn{
+    min-width: 191px;
+    background: linear-gradient(90deg, #722CAF 0%, #322A96 100%);
+    text-align: center;
+    padding: 15px;
+    margin-left: 6px;
+    display: block;
+}
+.soc_icon a{
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 24px;
+    background-color: transparent;
+    border: 1px solid #AAAAAA;
+    transition: all .3s;
+}
+.soc_icon a:hover{
+    background-color: #6E2DB4;
+    border-color: transparent
+}
+.menu_list{
+    margin-right: 80px;
+}
+.menu_list li{
+    margin-right: 48px;
+}
+.menu_list li a{
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 0;
+    padding-left: 0;
+}

@@ -1,0 +1,95 @@
+.text_block{
+    padding-right: 141px;
+}
+.text_block h4{
+    font-size: 13px;
+    font-weight: 700;
+    color: #AAAAAA;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.text_block h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.title_second{
+    color: #722CAF;
+}
+.text_block p{
+    margin-top: 45px;
+    margin-bottom: 0;
+}
+
+.text_block_btn{
+    color: #fff;
+    background: linear-gradient(90deg, #722CAF 0%, #322A96 100%);
+    padding: 11px 68px;
+    text-transform: uppercase;
+    margin-top: 52px;
+}
+.guest_card{
+    max-width: 190px;
+}
+.guest_card img{
+    height: 191px;
+    object-fit: cover;
+    margin-bottom: 19px;
+}
+.guest_card  h4{
+    text-transform: uppercase;
+    text-align: center;
+}
+.roadmapcard_row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.roadmapcard_row:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.roadmapcard_row p{
+    color: #AAAAAA;
+}
+.roadmapcard_row .num{
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 0;
+}
+.roadmapcard_row .roadmapcard_col:first-child{
+    padding-right: 83px;
+}
+.roadmapcard_row .roadmapcard_col:nth-child(2n){
+    padding-left: 83px;
+}
+.roadmapcard_col{
+    margin-left: auto;
+    /* max-width: 413px; */
+    width: 50%;
+}
+.roadmapcard_col h5{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.roadmapcard_icon{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.roadmapcard_row:nth-child(2n) .roadmapcard_col:nth-child(2n) {
+    padding-left: 0;
+    padding-right: 83px;
+}
+.roadmapcard_row:nth-child(2n) .roadmapcard_col:first-child{
+    padding-right:0;
+    padding-left: 83px;
+}
+.roadmapcard_row:nth-child(2n) .num{
+    text-align: left;
+}

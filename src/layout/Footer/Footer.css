@@ -1,0 +1,44 @@
+footer{
+    background-color: #272727;
+    color: #fff;
+    padding: 65px 0;
+}
+
+footer h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.footer_logo{
+    max-width: 260px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer_menu, footer .soc_icons{
+    list-style-type: none;
+    padding: 0;
+}
+.footer_menu li{
+    margin-bottom: 47px;
+    text-transform: uppercase;
+}
+footer .soc_icons{
+    margin-bottom: 33px;
+}
+
+.copy{
+    color:#AAAAAA;
+}
+footer h4{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+footer .menu_btn{
+    margin-left: 0;
+    margin-bottom: 42px;
+}
