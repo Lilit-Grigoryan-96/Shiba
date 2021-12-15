@@ -1,53 +1,47 @@
 import React from 'react'
+import {Row, Col} from 'antd'
+import { Link } from 'react-router-dom'
 import logo from "../../assets/logo.svg"
-import iconOne from "../../assets/icon-1.svg"
-import linkdin from "../../assets/icon-2.svg"
-import instagram from "../../assets/icon-3.svg"
-import twitter from "../../assets/icon-4.svg"
 import icon from "../../assets/btn-icon.svg"
+import Button from "../../components/Button"
+import SocIcons from "../../components/SocIcons"
 import "./Footer.css"
 
 const Footer = () =>{
+
     return (
         <footer>
-            <div className="container">
-                <div className='row'>
-                    <div className='col-md-6'>
-                        <h2>Curious?<br/> Get in touch</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <img className="footer_logo" src={logo} alt=""/>
-                        <p className="copy">© 2021 Shiba Social Club. All rights reserved</p>
-                    </div>
-                    <div className='col-md-3'>
-                        <ul className="footer_menu">
-                            <li>features</li>
-                            <li>About</li>
-                            <li>roadmap</li>
-                            <li>faq</li>
-                        </ul>
-                    </div>
-                    <div className='col-md-3'>
-                        <h4>follow us</h4>
-                        <ul className="soc_icons d-flex">
-                            <li className="soc_icon">
-                                <a href="#"><img src={iconOne} alt=""/></a>
-                            </li>
-                            <li class="soc_icon">
-                                <a href="#"><img src={linkdin} alt=""/></a>
-                            </li>
-                            <li className="soc_icon">
-                                <a href="#"><img src={instagram} alt=""/></a>
-                            </li>
-                            <li className="soc_icon">
-                                <a href="#"><img src={twitter} alt=""/></a>
-                            </li>
-                        </ul>
-                        <a className="menu_btn"><img src={icon} alt=""/> join our discord</a>
+            <Row>
+                <Col lg={12} md={24} sm={24}>
+                    <h2>Curious?<br/> Get in touch</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <img className="footer_logo" src={logo} alt=""/>
+                    <p className="copy">© 2021 Shiba Social Club. All rights reserved</p>
+                </Col>
+                <Col lg={6} md={24} sm={24}>
+                    <ul className="footer_menu">
+                        <li>
+                            <Link to="/features">features</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/roadmap">roadmap</Link>
+                        </li>
+                        <li>
+                            <Link to="/faq">faq</Link>
+                        </li>
+                    </ul>
+                </Col>
+                <Col lg={6} md={24} sm={24}>
+                    <h4>follow us</h4>
+                        <SocIcons/>
+                        <Button icon={icon} text={'join our discord'}/>
                         <h4>contact us</h4>
-                        <a>info@shibasocialclub.com</a>
-                    </div>
-                </div>
-            </div>
+                        <a href="mailto:info@shibasocialclub.com">info@shibasocialclub.com</a>
+                </Col>
+            </Row>
         </footer>
         
     )

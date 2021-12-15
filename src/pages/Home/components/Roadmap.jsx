@@ -41,7 +41,7 @@ const Roadmap = () =>{
     return (
         <div className={classes.roadmap_sec}>
             <Row>
-                <Col span={24}>
+                <Col lg={24}>
                     <h2>roadmap</h2>
                     <div className={classes.roadmap_cards}>
                         {

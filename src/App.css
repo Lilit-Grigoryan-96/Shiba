@@ -22,3 +22,40 @@ h4{
     font-size: 13px;
     font-weight: 400;
 }
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq_section .ant-collapse-header{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff !important;
+    padding: 40px 0 !important;
+
+}
+.faq_section .ant-collapse{
+    background-color: transparent;  
+    border: none;    
+}
+.faq_section .ant-collapse-content > .ant-collapse-content-box{
+    padding: 40px 0;
+    color: #AAAAAA;
+}
+.faq_section .ant-collapse-content > .ant-collapse-content-box p{
+    margin-bottom: 0;
+}
+.faq_section .ant-collapse-content{
+    background-color: transparent; 
+}
+.faq_section .ant-collapse-content, .faq_section .ant-collapse > .ant-collapse-item{
+    border-color: #AAAAAA; 
+}
+
+
+@media (max-width: 575px){
+
+   h2{
+        font-size: 20px;
+    }
+}

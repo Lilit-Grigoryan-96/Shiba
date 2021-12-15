@@ -1,5 +1,9 @@
 .text_block{
-    padding-right: 141px;
+    /* padding-right: 141px; */
+    max-width: 418px;
+}
+.reverse_row .text_block{
+    margin-left: auto;
 }
 .text_block h4{
     font-size: 13px;
@@ -9,24 +13,19 @@
     margin-bottom: 28px;
 }
 .text_block h2{
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 0;
 }
 .title_second{
     color: #722CAF;
+    margin-top: 10px;
 }
 .text_block p{
     margin-top: 45px;
     margin-bottom: 0;
 }
 
-.text_block_btn{
-    color: #fff;
-    background: linear-gradient(90deg, #722CAF 0%, #322A96 100%);
+.text_block button{
     padding: 11px 68px;
-    text-transform: uppercase;
     margin-top: 52px;
 }
 .guest_card{
@@ -92,4 +91,47 @@
 }
 .roadmapcard_row:nth-child(2n) .num{
     text-align: left;
+}
+
+.more_btn{
+    color: #fff;
+    background: linear-gradient(90deg, #722CAF 0%, #322A96 100%);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+.img_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img_gallery img{
+    max-width: 48%;
+    margin: 10px 0;
+    object-fit: cover;
+}
+.reverse_row{
+    flex-direction: row-reverse;
+}
+.info_sec{
+    margin-top: 200px;
+    align-items: center;
+}
+@media (max-width: 575px){
+    .roadmapcard_col, .roadmapcard_row .roadmapcard_col:nth-child(2n), .roadmapcard_row .roadmapcard_col:first-child{
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 0 0 10px !important;
+    }
+    .roadmapcard_row{
+        flex-direction: column !important;
+    }
+    .roadmapcard_row .num{
+        margin-bottom: 50px !important;
+        text-align: center  !important;
+    }
+    .roadmapcard_icon{
+        left: 0;
+    }
 }

@@ -1,7 +1,10 @@
 footer{
     background-color: #272727;
     color: #fff;
-    padding: 65px 0;
+    padding: 65px 182px;
+}
+footer a{
+    color: #fff;
 }
 
 footer h2{
@@ -25,6 +28,7 @@ footer h2{
 }
 footer .soc_icons{
     margin-bottom: 33px;
+    display: flex;
 }
 
 .copy{
@@ -38,7 +42,23 @@ footer h4{
 }
 
 
-footer .menu_btn{
+footer button{
     margin-left: 0;
     margin-bottom: 42px;
+    padding: 15px;
+}
+
+@media (max-width: 992px){
+    footer{
+        padding: 50px;
+    }
+}
+
+@media (max-width: 575px){
+    .footer_menu li{
+        margin-bottom: 25px;
+    }
+    .footer_logo{
+        max-width: 80%;
+    }
 }
