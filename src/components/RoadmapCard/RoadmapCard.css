@@ -6,6 +6,7 @@
 .roadmapcard_row:nth-child(2n){
     flex-direction: row-reverse;
 }
+
 .roadmapcard_row p{
     color: #AAAAAA;
 }

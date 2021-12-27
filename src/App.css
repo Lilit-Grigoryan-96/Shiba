@@ -59,6 +59,10 @@ ul{
     margin-top: 200px;
     align-items: center;
 }
+.info_sec:last-child .text_block{
+    margin-left: auto !important;
+}
+
 @media (max-width: 992px){
     .sec_padding{
         padding: 50px !important;
