@@ -1,8 +1,8 @@
 import React from 'react'
-import iconOne from "../assets/icon-1.svg"
-import linkdin from "../assets/icon-2.svg"
-import instagram from "../assets/icon-3.svg"
-import twitter from "../assets/icon-4.svg"
+import iconOne from "../../assets/icon-1.svg"
+import linkdin from "../../assets/icon-2.svg"
+import instagram from "../../assets/icon-3.svg"
+import twitter from "../../assets/icon-4.svg"
 
 const SocIcons = () =>{
     return (

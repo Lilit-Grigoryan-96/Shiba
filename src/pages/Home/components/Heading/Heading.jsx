@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row, Col} from 'antd'
-import classes from "../Home.module.css"
+import classes from "./Heading.module.css"
 import Countdown from 'react-countdown';
 
 
@@ -8,7 +8,7 @@ const Heading = () =>{
 
     return (
             <Row>
-                <Col span={24} className={classes.header}>
+                <Col span={24} className={`${classes.header} sec_padding`}>
                     <h1>when dreams come true</h1>
                     <div className={classes.count_container}>
                         <h2>Countdown to public sale</h2>

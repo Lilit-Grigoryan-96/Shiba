@@ -1,5 +1,5 @@
 import React from 'react'
-import "./components.css"
+import "./GuestCard.css"
 
 const GuestCard = ({img, name}) =>{
     return (

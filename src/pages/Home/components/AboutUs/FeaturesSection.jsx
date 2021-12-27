@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import {Row, Col} from 'antd'
-import classes from "../Home.module.css"
-import img from "../../../assets/img.svg"
-import AboutUsSection from "../../../components/AboutUsSection"
+import classes from "./FeaturesSection.module.css"
+import img from "../../../../assets/img.svg"
+import AboutUsSection from "./AboutUsSection"
 
 const FeaturesSection = () =>{
     let price = 0.075;
@@ -19,7 +19,8 @@ const FeaturesSection = () =>{
             party, the host will reveal its identity and the main reason for this invitation.`,
             btnText:'join us',
             imgs:[img],
-            reverse:false
+            reverse:false,
+            secId:'features'
         },
         {
             subTitle:'about',
@@ -31,12 +32,13 @@ const FeaturesSection = () =>{
             With more than 180+ hand drawn traits, each NFT is unique and comes with a membership to an 
             exclusive group of successful investors. Join an ambitious ever-growing community with multiple benefits and utilities.`,
             imgs:[img,img,img,img],
-            reverse:true
+            reverse:true,
+            secId:'about'
         }
     ]
 
     return (
-        <div className={classes.features_sec}>
+        <div className={`${classes.features_sec} sec_padding`}>
             <Row className={classes.form_row}>
                 <Col lg={12} md={24}>
                     <img src={img} alt=""/>
@@ -73,7 +75,7 @@ const FeaturesSection = () =>{
                 dataList.map((el, ind) =>{
                     return (
                         <AboutUsSection subTitle={el.subTitle} firtTitle={el.firtTitle} secondTitle={el.secondTitle} text={el.text}
-                        btnText = {el.btnText} imgs={el.imgs} reverse={el.reverse} key={el + '_' + ind}/>
+                        btnText = {el.btnText} imgs={el.imgs} reverse={el.reverse} key={el + '_' + ind} secId = {el.secId}/>
                     )
                 })
             }

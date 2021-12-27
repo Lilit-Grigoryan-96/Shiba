@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row, Col} from 'antd'
-import classes from "../Home.module.css"
-import RoadmapCard from "../../../components/RoadmapCard"
+import classes from "./Roadmap.module.css"
+import RoadmapCard from "../../../../components/RoadmapCard/RoadmapCard"
 
 let list = [
     {
@@ -39,7 +39,7 @@ let list = [
 
 const Roadmap = () =>{
     return (
-        <div className={classes.roadmap_sec}>
+        <div className={`${classes.roadmap_sec} sec_padding`} id='roadmap'>
             <Row>
                 <Col lg={24}>
                     <h2>roadmap</h2>

@@ -1,9 +1,9 @@
 import React from 'react'
 import {Row, Col} from 'antd'
-import GuestCard from "../../../components/GuestCard"
-import img from "../../../assets/img.svg"
-import classes from "../Home.module.css"
-import Button from "../../../components/Button"
+import GuestCard from "../../../../components/GuestCard/GuestCard"
+import img from "../../../../assets/img.svg"
+import classes from "./Guests.module.css"
+import Button from "../../../../components/Button/Button"
 
 let cardInfo = [
     {img:img, name: 'Lorem Ipsum'},

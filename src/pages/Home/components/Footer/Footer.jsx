@@ -1,10 +1,9 @@
 import React from 'react'
 import {Row, Col} from 'antd'
-import { Link } from 'react-router-dom'
-import logo from "../../assets/logo.svg"
-import icon from "../../assets/btn-icon.svg"
-import Button from "../../components/Button"
-import SocIcons from "../../components/SocIcons"
+import logo from "../../../../assets/logo.svg"
+import icon from "../../../../assets/btn-icon.svg"
+import Button from "../../../../components/Button/Button"
+import SocIcons from "../../../../components/SocIcons/SocIcons"
 import "./Footer.css"
 
 const Footer = () =>{
@@ -21,16 +20,16 @@ const Footer = () =>{
                 <Col lg={6} md={24} sm={24}>
                     <ul className="footer_menu">
                         <li>
-                            <Link to="/features">features</Link>
+                            <a href="#features">features</a>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <Link to="/roadmap">roadmap</Link>
+                            <a href="#roadmap">roadmap</a>
                         </li>
                         <li>
-                            <Link to="/faq">faq</Link>
+                            <a href="#faq">faq</a>
                         </li>
                     </ul>
                 </Col>

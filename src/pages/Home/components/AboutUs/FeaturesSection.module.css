@@ -1,0 +1,133 @@
+
+.features_sec{
+    padding: 200px 183px;
+    background-color: #000;
+    color: #AAAAAA;
+}
+.form_card{
+    color: #fff;
+    background-color: #272727;  
+    max-width: 442px;
+    margin-left: auto;
+    padding: 40px 30px 30px 30px; 
+}
+.form_card_btn{
+    text-align: center;
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #722CAF 0%, #322A96 100%);
+    text-transform: uppercase;
+}
+.form_card h2{
+    margin-bottom: 30px;
+}
+.card_info_container{
+    padding: 11px;
+    border: 1px solid #AAAAAA;
+}
+.card_info_container, .counter_container, .counter, .total{
+    display: flex;
+    justify-content: space-between;
+}
+.card_info_container img{
+    max-width: 87px;
+    height: 87px;
+    object-fit: cover;
+}
+.card_info{
+    text-align: right;
+}
+.card_info p{
+    margin-bottom: 0;
+}
+.card_info h5{  
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.card_info h5, .total_price{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.counter_container{
+    background-color: #6E2DB4;
+    margin-top: 31px;
+    margin-bottom: 23px;
+    padding: 8px 12px;
+}
+.counter_container button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.counter{
+    align-items: center;
+}
+.counter input{
+    background-color: transparent;
+    border: none;
+    max-width: 25px;
+    text-align: center;
+
+}
+.counter input:focus, .counter button:focus{
+    border: none;
+    outline: none;
+}
+.total{
+    padding: 10px;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    margin-bottom: 21px;
+}
+
+.form_card_btn{
+    width: 100%;
+    padding: 10px;
+}
+
+.img_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img_gallery img{
+    max-width: 48%;
+    margin: 10px 0;
+    object-fit: cover;
+}
+.reverse_row{
+    flex-direction: row-reverse;
+}
+.reverse_row .text_block{
+    margin-left: auto;
+}
+
+@media (max-width: 767px){
+    .count_container{
+        padding: 27px 
+    }
+    .form_card{
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .form_row{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 575px){
+    .card_info_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .count_container{
+        text-align: center;
+    }
+    .count_container ul{
+        flex-direction: column;
+    }
+   
+}

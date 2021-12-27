@@ -1,0 +1,30 @@
+.text_block{
+    max-width: 418px;
+}
+.reverse_row .text_block{
+    margin-left: auto;
+}
+.text_block h4{
+    font-size: 13px;
+    font-weight: 700;
+    color: #AAAAAA;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.text_block h2{
+    margin-bottom: 0;
+}
+.title_second{
+    color: #722CAF;
+    margin-top: 10px;
+}
+.text_block p{
+    margin-top: 45px;
+    margin-bottom: 0;
+}
+
+.text_block button{
+    padding: 11px 68px;
+    margin-top: 52px;
+}
+

@@ -1,0 +1,12 @@
+.guest_card{
+    max-width: 190px;
+}
+.guest_card img{
+    height: 191px;
+    object-fit: cover;
+    margin-bottom: 19px;
+}
+.guest_card  h4{
+    text-transform: uppercase;
+    text-align: center;
+}

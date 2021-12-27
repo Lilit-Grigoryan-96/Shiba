@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row, Col} from 'antd'
-import classes from "../Home.module.css"
+import classes from "./Faq.module.css"
 import { Collapse } from 'antd';
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 
@@ -25,7 +25,7 @@ const list =[
 
 const Faq = () =>{
     return (
-        <div className={`${classes.faq_sec} faq_section`}>
+        <div className={`${classes.faq_sec} faq_section sec_padding`} id='faq'>
             <Row>
                 <Col lg={24}>
                     <h2>FREQUENTLY ASKED QUESTIONS</h2>

@@ -1,0 +1,9 @@
+
+.more_btn{
+    color: #fff;
+    background: linear-gradient(90deg, #722CAF 0%, #322A96 100%);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}

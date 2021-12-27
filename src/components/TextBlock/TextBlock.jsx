@@ -1,6 +1,6 @@
 import React from 'react'
-import "./components.css"
-import Button from './Button'
+import "./TextBlock.css"
+import Button from '../Button/Button'
 
 const TextBlock = ({ subTitle, firtTitle, secondTitle, text, btnText}) =>{
     return (

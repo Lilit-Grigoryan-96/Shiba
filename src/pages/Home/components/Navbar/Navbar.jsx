@@ -1,37 +1,34 @@
 import {React, useState} from 'react'
-import { Link } from 'react-router-dom'
-import logo from "../../assets/logo.svg"
-import icon from "../../assets/btn-icon.svg"
+import logo from "../../../../assets/logo.svg"
+import icon from "../../../../assets/btn-icon.svg"
 import { MenuOutlined } from '@ant-design/icons';
-import Button from "../../components/Button"
-import SocIcons from "../../components/SocIcons"
-import "./Header.css"
+import Button from "../../../../components/Button/Button"
+import SocIcons from "../../../../components/SocIcons/SocIcons"
+import "./Navbar.css"
 
 
 
-const Header = () =>{
+const Navbar = () =>{
     
     const [toggle, setToggle] = useState(false)
 
     return (
         <nav className="header_menu">
-            <Link to="/"><img className="logo" src={logo} alt=""/></Link>
+            <img className="logo" src={logo} alt=""/>
             <MenuOutlined  className="menu_bar" onClick={() => setToggle(!toggle)}/>
             <div className={`collapse_menu ${toggle ? 'd_flex' : 'd_none'}`}>
-                
-        
                 <ul className="menu_list">
                     <li>
-                        <Link to="/features">features</Link>
+                        <a href="#features">features</a>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <Link to="/roadmap">roadmap</Link>
+                        <a href="#roadmap">roadmap</a>
                     </li>
                     <li>
-                        <Link to="/faq">faq</Link>
+                        <a href="#faq">faq</a>
                     </li>
                 </ul>
                 <SocIcons/>
@@ -42,4 +39,4 @@ const Header = () =>{
     )
 };
 
-export default Header;
+export default Navbar;

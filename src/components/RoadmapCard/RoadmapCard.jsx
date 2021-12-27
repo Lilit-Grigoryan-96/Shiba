@@ -1,5 +1,6 @@
 import React from 'react'
-import Ellipse from "../assets/Ellipse 1.svg"
+import Ellipse from "../../assets/Ellipse 1.svg"
+import "./RoadmapCard.css"
 
 const RoadmapCard = ({num, title, text}) =>{
     return (
