@@ -1,0 +1,73 @@
+:root {
+  --text-color: #aaaaaa;
+  --whiteColor: #ffffff;
+}
+.roadmapcard_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  p {
+    color: var(--text-color);
+  }
+  .num {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--whiteColor);
+    text-align: right;
+    margin-bottom: 0;
+  }
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+    .roadmapcard_col:nth-child(2n) {
+      padding-left: 0;
+      padding-right: 83px;
+    }
+    .roadmapcard_col:first-child {
+      padding-right: 0;
+      padding-left: 83px;
+    }
+    .num {
+      text-align: left;
+    }
+  }
+
+  .roadmapcard_col {
+    width: 50%;
+    h5 {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    &:first-child {
+      padding-right: 83px;
+    }
+    &:nth-child(2n) {
+      padding-left: 83px;
+    }
+  }
+  .roadmapcard_icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 575px) {
+  .roadmapcard_row {
+    flex-direction: column !important;
+    .roadmapcard_col {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 0 0 10px !important;
+    }
+    .num {
+      margin-bottom: 50px;
+      text-align: left;
+    }
+
+    .roadmapcard_icon {
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.menu__list {
+  display: flex;
+  margin-bottom: 0;
+  gap: 48px;
+  margin-right: 48px;
+  &__item {
+    .menu__link {
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 1299px) {
+    flex-direction: column;
+  }
+}

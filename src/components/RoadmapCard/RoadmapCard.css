@@ -1,71 +1,72 @@
-.roadmapcard_row{
-    display: flex;
-    align-items: center;
-    margin-bottom: 80px;
-}
-.roadmapcard_row:nth-child(2n){
-    flex-direction: row-reverse;
+:root {
+  --text-color: #aaaaaa;
+  --whiteColor: #ffffff;
 }
 
-.roadmapcard_row p{
-    color: #AAAAAA;
+.roadmapcard_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
 }
-.roadmapcard_row .num{
-    font-size: 64px;
-    font-weight: 800;
-    color: #fff;
-    text-align: right;
-    margin-bottom: 0;
+.roadmapcard_row p {
+  color: var(--text-color);
 }
-.roadmapcard_row .roadmapcard_col:first-child{
-    padding-right: 83px;
+.roadmapcard_row .num {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--whiteColor);
+  text-align: right;
+  margin-bottom: 0;
 }
-.roadmapcard_row .roadmapcard_col:nth-child(2n){
-    padding-left: 83px;
+.roadmapcard_row:nth-child(2n) {
+  flex-direction: row-reverse;
 }
-.roadmapcard_col{
-    margin-left: auto;
-    /* max-width: 413px; */
-    width: 50%;
-}
-.roadmapcard_col h5{
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-.roadmapcard_icon{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
 .roadmapcard_row:nth-child(2n) .roadmapcard_col:nth-child(2n) {
-    padding-left: 0;
-    padding-right: 83px;
+  padding-left: 0;
+  padding-right: 83px;
 }
-.roadmapcard_row:nth-child(2n) .roadmapcard_col:first-child{
-    padding-right:0;
-    padding-left: 83px;
+.roadmapcard_row:nth-child(2n) .roadmapcard_col:first-child {
+  padding-right: 0;
+  padding-left: 83px;
 }
-.roadmapcard_row:nth-child(2n) .num{
-    text-align: left;
+.roadmapcard_row:nth-child(2n) .num {
+  text-align: left;
+}
+.roadmapcard_row .roadmapcard_col {
+  width: 50%;
+}
+.roadmapcard_row .roadmapcard_col h5 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.roadmapcard_row .roadmapcard_col:first-child {
+  padding-right: 83px;
+}
+.roadmapcard_row .roadmapcard_col:nth-child(2n) {
+  padding-left: 83px;
+}
+.roadmapcard_row .roadmapcard_icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-@media (max-width: 575px){
-    .roadmapcard_col, .roadmapcard_row .roadmapcard_col:nth-child(2n), .roadmapcard_row .roadmapcard_col:first-child{
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 0 0 10px !important;
-    }
-    .roadmapcard_row{
-        flex-direction: column !important;
-    }
-    .roadmapcard_row .num{
-        margin-bottom: 50px !important;
-        text-align: center  !important;
-    }
-    .roadmapcard_icon{
-        left: 0;
-    }
-}
+@media (max-width: 575px) {
+  .roadmapcard_row {
+    flex-direction: column !important;
+  }
+  .roadmapcard_row .roadmapcard_col {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0 0 10px !important;
+  }
+  .roadmapcard_row .num {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  .roadmapcard_row .roadmapcard_icon {
+    left: 0;
+  }
+}/*# sourceMappingURL=RoadmapCard.css.map */

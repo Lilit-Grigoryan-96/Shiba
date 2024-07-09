@@ -1,0 +1,44 @@
+:root {
+  --whiteColor: #ffffff;
+  --counter-bg: #6e2db4;
+}
+
+.header {
+  background-image: url("../../../../assets/Header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+  color: var(--whiteColor);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      max-width: 500px;
+      margin: 32px auto;
+    }
+    .header__counter {
+      padding: 27px 112px;
+      background-color: var(--counter-bg);
+      ul {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        li {
+          color: var(--whiteColor);
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 27px;
+        }
+      }
+      @media (max-width: 991px) {
+        padding: 20px;
+      }
+    }
+  }
+}

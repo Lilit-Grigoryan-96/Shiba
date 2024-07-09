@@ -1,12 +1,13 @@
-.guest_card{
-    max-width: 190px;
+.guest__card {
+  max-width: 165px;
 }
-.guest_card img{
-    height: 191px;
-    object-fit: cover;
-    margin-bottom: 19px;
+.guest__card__img {
+  height: 191px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 19px;
 }
-.guest_card  h4{
-    text-transform: uppercase;
-    text-align: center;
-}
+.guest__card__title {
+  text-transform: uppercase;
+  text-align: center;
+}/*# sourceMappingURL=GuestCard.css.map */

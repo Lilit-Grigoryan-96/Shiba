@@ -1,0 +1,22 @@
+:root {
+  --text-color: #aaaaaa;
+  --purpleColor: #6e2db4;
+}
+
+.icons {
+  margin-bottom: 0;
+  display: flex;
+}
+.icons__item__link {
+  display: inline-block;
+  height: 30px;
+  min-width: 30px;
+  text-align: center;
+  margin-right: 24px;
+  border: 1px solid var(--text-color);
+  transition: all 0.3s;
+}
+.icons__item__link:hover {
+  background-color: var(--purpleColor);
+  border-color: transparent;
+}/*# sourceMappingURL=SocIcons.css.map */

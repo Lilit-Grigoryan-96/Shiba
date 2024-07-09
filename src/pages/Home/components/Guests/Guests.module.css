@@ -1,44 +1,29 @@
-
-.guests_sec{
-    background-color: #272727; 
-    padding: 65px 72px;
- }
- .guests_sec_info{
-     padding-left: 110px;
-     padding-right: 110px;
-     margin-bottom: 83px;
- }
- .guests_sec_info p{
-     color: #AAAAAA;
-     margin-bottom: 34px;
- }
- .guests_sec_info  button{
-     text-align: center;
-     border: none;
-     color: #fff;
-     background: linear-gradient(90deg, #722CAF 0%, #322A96 100%);
-     text-transform: uppercase;
- }
- .guests_sec_info  button{
-     padding: 11px 29px;
- }
-
- 
-@media (max-width: 992px){
-
-   
-    .guests_sec, .roadmap_sec{
-        padding: 50px;
-    }
-    .guests_sec_info{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .guests{
-        justify-content: center;
-    }
-    .guest_card{
-        margin: auto;
-    }
-   
+:root {
+  --section-bg: #272727;
+  --text-color: #aaaaaa;
 }
+
+.guests_sec {
+  background-color: var(--section-bg);
+}
+.guests_sec_info p {
+  color: var(--text-color);
+  margin-bottom: 34px;
+}
+.guests_sec .guests {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .guests_sec,
+  .roadmap_sec {
+    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .guests_sec .guests,
+  .roadmap_sec .guests {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Guests.module.css.map */

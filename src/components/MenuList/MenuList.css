@@ -1,0 +1,18 @@
+.menu__list {
+  display: flex;
+  margin-bottom: 0;
+  gap: 48px;
+  margin-right: 48px;
+}
+.menu__list__item .menu__link {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (max-width: 1299px) {
+  .menu__list {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=MenuList.css.map */

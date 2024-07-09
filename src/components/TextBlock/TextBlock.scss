@@ -1,0 +1,36 @@
+:root {
+  --text-color: #aaaaaa;
+  --purpleColor: #722caf;
+}
+
+.text__block {
+  &__heading {
+    h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-color);
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .title_second {
+      color: var(--purpleColor);
+      margin-top: 10px;
+    }
+  }
+
+  &__desc {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  button {
+    padding: 11px 68px;
+    margin-top: 52px;
+  }
+}

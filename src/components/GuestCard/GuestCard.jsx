@@ -1,13 +1,14 @@
-import React from 'react'
-import "./GuestCard.css"
+import React from "react";
 
-const GuestCard = ({img, name}) =>{
-    return (
-        <div className="guest_card">
-            <img src={img} alt=""/>
-            <h4>{name}</h4>
-        </div>
-    )
-}
+import "./GuestCard.css";
+
+const GuestCard = ({ img, name }) => {
+  return (
+    <div className="guest__card">
+      <img className="guest__card__img" src={img} alt={name} />
+      <h4 className="guest__card__title">{name}</h4>
+    </div>
+  );
+};
 
 export default GuestCard;

@@ -1,53 +1,45 @@
-.header{
-    background-image: url('../../../../assets/Header-bg.jpg');
-    height: 720px;
-    color: #fff;  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;  
-    padding-top: 42px;
+:root {
+  --whiteColor: #ffffff;
+  --counter-bg: #6e2db4;
 }
 
-.header h1{
-    font-size: 64px;
-    line-height: 73px;
-    font-weight: 800;
-    text-align: center;
-    text-transform: uppercase;
-    max-width: 500px;
+.header {
+  background-image: url("../../../../assets/Header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+  color: var(--whiteColor);
 }
-.count_container{
-    padding: 27px 112px;
-    background-color: #6E2DB4;
-    /* max-width: 854px; */
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 42px;
 }
-.count_container .ant-statistic-content{
-    text-align: center;
+.header__content h1 {
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 500px;
+  margin: 32px auto;
 }
-.count_container  ul{
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-around;
+.header__content .header__counter {
+  padding: 27px 112px;
+  background-color: var(--counter-bg);
 }
-.count_container  ul li{
-    display: flex;
-    align-items: baseline;
+.header__content .header__counter ul {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
 }
-.count_container span{
-    margin-right: 5px;
+.header__content .header__counter ul li {
+  color: var(--whiteColor);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
 }
-.count_container  ul li, .count_container span{
-  color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
-}
-
-@media (max-width: 575px){
-    .header h1{
-        font-size: 30px;
-    }
-}
+@media (max-width: 991px) {
+  .header__content .header__counter {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=Heading.module.css.map */
